@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh; /* ocupar 100% da página */
+    background: linear-gradient(120deg, #49A078, #216869); /* Criar degradê */
+    display: flex; /* display: flex para os elementos ficarem um do lado do outro e alinhar os itens no centro */
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Serve para espaçar lateralmente entre os itens */
+    width: 55rem;
+    height: 20rem;
+    background: transparent;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0.8rem 1rem rgba(0, 0, 0, .5);
+}
+
+.clock div {
+    height: 17rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column; /* Serve para colocar os elementos um abaixo do outro */
+    align-items: center;
+    justify-content: center;
+
+    
+    color: white;
+
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 0.5rem, 0.5rem, 1.5rem rgba(0, 0, 0, .7);
+    border-radius: 0.7rem;
+    letter-spacing: 0.3rem; /* Espaçamento entre as letras */
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 6rem;
+}
+
+.clock span.time {
+    font-size: 1.5rem;
+}
